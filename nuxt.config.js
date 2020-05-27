@@ -17,7 +17,7 @@ export default {
     // Nuxt 2.13+ だとこれすらいらんくなるくさい（ nuxt export ）
     async routes () {
       const { $content } = require('@nuxt/content')
-      const files = await $content('news' || 'index').limit(15).fetch()
+      const files = await $content('news' || 'index').fetch()
 
       return files.map(file => file.path === '/index' ? '/' : file.path)
     }

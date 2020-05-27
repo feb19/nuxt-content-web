@@ -1,7 +1,7 @@
 <template>
   <div>
-    <div v-for="article in articles" :key="article.slug">
-      <nuxt-link :to="'/news/'+ article.slug">{{article.title}} {{article.date}}</nuxt-link>
+    <div v-for="n in news" :key="n.slug">
+      <nuxt-link :to="'/news/'+ n.slug">{{n.title}} {{n.date}}</nuxt-link>
     </div>
   </div>
 </template>
@@ -11,8 +11,8 @@
 export default {
   async asyncData ({ $content, params }) {
     const query = await $content('news' || 'index').limit(15)
-    const articles = await query.fetch()
-    return { articles }
+    const news = await query.fetch()
+    return { news }
   }
 }
 </script>
