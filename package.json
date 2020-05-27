@@ -1,0 +1,17 @@
+{
+  "name": "nuxt-content-web",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt build && nuxt start",
+    "generate": "nuxt generate"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@nuxt/content": "^1.0.0",
+    "nuxt": "^2.12.2"
+  }
+}
