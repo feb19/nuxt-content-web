@@ -1,14 +1,15 @@
 {
   "name": "nuxt-content-web",
   "version": "1.0.0",
-  "description": "",
+  "private": true,
+  "description": "Nuxt Content の解説用レポジトリです https://qiita.com/feb19/items/f030474fbdc4bcb4e0c7",
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt build && nuxt start",
     "generate": "nuxt generate"
   },
-  "author": "",
+  "author": "feb19",
   "license": "ISC",
   "dependencies": {
     "@nuxt/content": "^1.11.1",
